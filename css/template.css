@@ -68,7 +68,7 @@ body {
 
 /*header section*/
 .hero_area {
-  height: 60rem;
+  height: 35rem;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right bottom;
@@ -1145,3 +1145,23 @@ a:focus {
 
 /* end footer section*/
 /*# sourceMappingURL=style.css.map */
+
+
+/*  Hide elements in a smaller screen */
+
+@media (max-width: 990px) {
+  .navbar-toggler {
+    display: none;  /* hide the hamburger button */
+  }
+  .shared-overlay { /* hide the overlay for the hero area */
+    display: none;
+  }
+  .hero_area {
+    display: none; /* hide the hero hero area */
+  }
+
+
+
+
+
+}
