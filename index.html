@@ -1,0 +1,397 @@
+<html style="--template-color-0: #000000; --template-color-1: #ffd736;"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>DIVD.works</title>
+
+    <link rel="stylesheet" type="text/css" href="/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Dosis:400,600,700|Poppins:400,600,700&display=swap" rel="stylesheet">
+
+    <link href="/css/template.css" rel="stylesheet">
+
+    <link href="/css/responsive.css" rel="stylesheet">
+    <script>
+      const burgerClick = (e) => {
+        const navLinks = document.querySelector(".nav-links");
+        navLinks.classList.toggle("active");
+      };
+    </script>
+
+    <script type="module">
+      import { sendData } from "/static/shared/js/sendData.js";
+
+      [...document.getElementsByTagName("form")].forEach((form) => {
+        if (form.getAttribute("data-user-form") === "true") {
+          form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            sendData(e.target.id);
+          });
+        }
+      });
+      const element = document.getElementById("default-contact-form");
+
+      element &&
+        element.addEventListener("submit", (e) => {
+          e.preventDefault();
+          sendData(e.target.id);
+        });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const dropdownButton = document.querySelector(".shared-dropdown-button");
+        const dropdownContent = document.querySelector(".shared-dropdown-content");
+        if (dropdownButton === null || dropdownContent === null) return;
+        dropdownButton.addEventListener("click", function () {
+          dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
+        });
+
+        const dropdownItems = document.querySelectorAll(".shared-dropdown-content a");
+        dropdownItems.forEach((item) => {
+          item.addEventListener("click", function (event) {
+            event.preventDefault();
+            window.location.href = item.href;
+          });
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <nav class="sticky-nav">
+      <div class="custom_nav2">
+        <div class="sticky-nav custom_nav2 navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="#home">
+            <img data-dir="landscape" src="/images/divdlogo.svg" alt="logo">
+            <h3 style="color: #ffd736; padding-top: 20px;">.WORKS</h3>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i style="display: block; width: 32px; height: 32px" tag="burger">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16">
+                <path fill="currentColor" fill-rule="evenodd" d="M0 3.75A.75.75 0 0 1 .75 3h14.5a.75.75 0 0 1 0 1.5H.75A.75.75 0 0 1 0 3.75M0 8a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H.75A.75.75 0 0 1 0 8m.75 3.5a.75.75 0 0 0 0 1.5h14.5a.75.75 0 0 0 0-1.5z" clip-rule="evenodd"></path>
+              </svg>
+            </i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#services">Our Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact Us</a>
+                </li>
+              </ul>
+              <span class="shared-language-placeholder"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="hero_area position-relative">
+        <div class="shared-overlay">
+          <img id="ph-img-14" src="/images/StockCake-Tech Team Working_1718396029.jpg" alt="" class="null" data-query="IT" data-alt="overlay">
+        </div>
+
+        <section class="slider_section" id="home">
+          <div class="slider_container">
+        </section>
+      </div>
+      
+      <section class="about_section layout_padding" id="about">
+        <div class="container">
+          <div class="heading_container">
+            <h2>About DIVD WORKS</h2>
+          </div>
+          <div class="box">
+            <div class="detail-box">
+              <div class="detail-info">
+                <div class="content">
+                  <h5>Expertise</h5>
+                  <p>Our team comprises seasoned industry professionals with extensive experience in IT and security staffing..</p>
+                </div>
+                <div class="img-box">
+                  <img id="ph-img-13" src="/images/placeholder_image_547x350.png" alt="" class="null" data-query="" data-alt="" alt="" class="null" data-query="recruitment" data-alt="">
+                </div>
+              </div>
+              <div class="detail-info">
+                <div class="img-box">
+                    <img id="ph-img-12" src="/images/placeholder_image_547x350.png" alt="" class="null" data-query="" data-alt="" alt="" class="null" data-query="recruitment" data-alt="">
+                </div>
+                <div data-dir="landscape" class="content">
+                  <h5>Professionalism</h5>
+                  <p>We uphold the highest standards of professionalism in all our interactions and services.</p>
+                </div>
+              </div>
+              <div class="detail-info">
+                <div class="content">
+                  <h5>Commitment</h5>
+                  <p>We are committed to providing the best staffing solutions to meet your organisat needs.</p>
+                </div>
+                <div class="img-box">
+                    <img id="ph-img-11" src="/images/placeholder_image_547x350.png" alt="" class="null" data-query="" data-alt="" alt="" class="null" data-query="recruitment" data-alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="service_section layout_padding" id="services">
+        <div class="container">
+          <div class="heading_container">
+            <h2>Our Services</h2>
+          </div>
+          <div class="service_container">
+            <div class="box">
+                <img id="ph-img-10" src="/images/placeholder_image_547x350.png" alt="" class="null" data-query="" data-alt="" alt="" class="null" data-query="recruitment" data-alt="">
+              <div class="link_box">
+                <h6></h6>
+                <p>Meet your specific IT and security needs.</p>
+              </div>
+            </div>
+            <div class="box">
+                <img id="ph-img-9" src="/images/placeholder_image_547x350.png" alt="" class="null" data-query="" data-alt="" alt="" class="null" data-query="recruitment" data-alt="">
+              <div class="link_box">
+                <h6></h6>
+                <p></p>
+              </div>
+            </div>
+            <div class="box">
+                <img id="ph-img-8" src="/images/placeholder_image_547x350.png" alt="" class="null" data-query="" data-alt="" alt="" class="null" data-query="recruitment" data-alt="">
+              <div class="link_box">
+                <h6></h6>
+                <p>We offer permanent placement services to ensure long-term success for your organization.</p>
+              </div>
+            </div>
+            <div class="box">
+                <img id="ph-img-7" src="/images/placeholder_image_547x350.png" alt="" class="null" data-query="" data-alt="" alt="" class="null" data-query="recruitment" data-alt="">
+              <div class="link_box">
+                <h6></h6>
+                <p></p>
+              </div>
+            </div>
+            <div class="box">
+              <img id="ph-img-6" src="/images/placeholder_image_547x350.png" alt="" class="null" data-query="" data-alt="" alt="" class="null" data-query="recruitment" data-alt="">
+              <div class="link_box">
+                <h6>NT</h6>
+                <p>We provide project management services to ensure your IT projects are completed on time and within budget.</p>
+              </div>
+            </div>
+            <div class="box">
+              <img id="ph-img-5" src="/images/placeholder_image_547x350.png" alt="" class="null" data-query="" data-alt="" alt="" class="null" data-query="recruitment" data-alt="">
+              <div class="link_box">
+                <h6></h6>
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+      <section class="us_section layout_padding" id="why">
+        <div class="container">
+          <div class="heading_container">
+            <h2>Why Choose Us</h2>
+          </div>
+          <div class="us_container">
+            <div class="box">
+              <div class="img-box">
+                <i style="display: block; width: 96px; height: 96px" tag="smile">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 24 24">
+                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2">
+                      <path stroke-dasharray="60" stroke-dashoffset="60" d="M12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3Z">
+                        <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="60;0"></animate>
+                      </path>
+                      <path stroke-dasharray="14" stroke-dashoffset="14" d="M8 14C8.5 15.5 9.79086 17 12 17C14.2091 17 15.5 15.5 16 14">
+                        <animate fill="freeze" attributeName="stroke-dashoffset" begin="1s" dur="0.2s" values="14;0"></animate>
+                      </path>
+                    </g>
+                    <g fill="currentColor" fill-opacity="0">
+                      <ellipse cx="9" cy="9.5" rx="1" ry="1.5">
+                        <animate fill="freeze" attributeName="fill-opacity" begin="0.6s" dur="0.2s" values="0;1"></animate>
+                      </ellipse>
+                      <ellipse cx="15" cy="9.5" rx="1" ry="1.5">
+                        <animate fill="freeze" attributeName="fill-opacity" begin="0.8s" dur="0.2s" values="0;1"></animate>
+                      </ellipse>
+                    </g>
+                  </svg>
+                </i>
+              </div>
+              <div class="detail-box">
+                <h5>Team of Specialists</h5>
+                <p>Our team consists of highly skilled professionals with extensive experience in IT and security.</p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="img-box">
+                <i style="display: block; width: 96px; height: 96px" tag="home">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M17.23 8.77h1.54V7.23h-1.54zm0 4h1.54v-1.54h-1.54zm0 4h1.54v-1.54h-1.54zM16 20v-1h5V5h-9.615v2.188l-1-.719V4H22v16zM2 20v-8.5l6-4.27l6 4.27V20H9.27v-4.5H6.73V20zm1-1h2.73v-4.5h4.54V19H13v-7L8 8.488L3 12zm7.27 0v-4.5H5.73V19v-4.5h4.54z"></path>
+                  </svg>
+                </i>
+              </div>
+              <div class="detail-box">
+                <h5>Always Ready</h5>
+                <p>We are always ready to provide the best staffing solutions for your business.</p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="img-box">
+                <i style="display: block; width: 96px; height: 96px" tag="world">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M4 12c0-2.154.851-4.109 2.235-5.547c.122.111.227.252.306.43c.204.457.204.928.204 1.345c0 .328 0 .64.105.865c.144.308.766.44 1.315.554l.02.005c.19.04.385.08.563.13c.506.14.898.595 1.211.96c.13.151.323.374.42.43c.05-.036.211-.211.29-.498c.062-.22.044-.414-.045-.52c-.56-.66-.529-1.93-.356-2.399c.272-.739 1.122-.684 1.744-.644h.006c.23.015.446.03.608.009c.471-.06.695-.616.835-.964c.045-.111.081-.201.114-.246c.265-.363 1.024-.892 1.577-1.265a8.024 8.024 0 0 1 4.424 4.779a7.98 7.98 0 0 1 2.339 1.263C21.272 5.785 17.078 2 12 2C6.477 2 2 6.477 2 12c0 5.078 3.785 9.272 8.687 9.915a7.984 7.984 0 0 1-1.263-2.339A8.003 8.003 0 0 1 4 12m13 1a4 4 0 1 0 0 8a4 4 0 0 0 0-8m-6 4a6 6 0 1 1 12 0a6 6 0 0 1-12 0m5-3v4h4v-2h-2v-2z"></path>
+                  </svg>
+                </i>
+              </div>
+              <div class="detail-box">
+                <h5>Proven Experience</h5>
+                <p>Our proven track record speaks for itself. We have successfully placed numerous professionals in top companies.</p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="img-box">
+                <i style="display: block; width: 96px; height: 96px" tag="idea">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M13 3c3.9 0 7 3.1 7 7c0 2.8-1.6 5.2-4 6.3V21H9v-3H8c-1.1 0-2-.9-2-2v-3H4.5c-.4 0-.7-.5-.4-.8L6 9.7C6.2 5.9 9.2 3 13 3m0-2C8.4 1 4.6 4.4 4.1 8.9L2.5 11c-.6.8-.6 1.8-.2 2.6c.4.7 1 1.2 1.7 1.3V16c0 1.9 1.3 3.4 3 3.9V23h11v-5.5c2.5-1.7 4-4.4 4-7.5c0-5-4-9-9-9m1 13h-2v-1h2zm1.6-4.5c-.3.4-.6.8-1.1 1.1V12h-3v-1.4c-1.4-.8-1.9-2.7-1.1-4.1s2.7-1.9 4.1-1.1s1.9 2.7 1.1 4.1"></path>
+                  </svg>
+                </i>
+              </div>
+              <div class="detail-box">
+                <h5>Innovative Ideas</h5>
+                <p>We bring innovative ideas to the table to help your business stay ahead of the competition.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      
+      <section class="info_section layout_padding2-top" id="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h6>About DIVD Works</h6>
+              <p>We specialize in IT and security staffing, providing organisations with highly skilled professionals to meet their technology needs.</p>
+            </div>
+            <div class="col-md-4">
+              <h6>Menus</h6>
+              <ul>
+                <li class="active">
+                  <a href="#home">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li>
+                  <a href="#about">About Us</a>
+                </li>
+                <li>
+                  <a href="#services">Our Services</a>
+                </li>
+                <li>
+                  <a href="#contact">Contact Us</a>
+                </li>
+                <li>
+                  <span class="shared-privacy-placeholder"></span>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h6>Contact Us</h6>
+              <div class="info_link-box">
+                <a href="">
+                  <i style="display: block; width: 24px; height: 24px" tag="location">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                      <path fill="currentColor" d="M12 11.5A2.5 2.5 0 0 1 9.5 9A2.5 2.5 0 0 1 12 6.5A2.5 2.5 0 0 1 14.5 9a2.5 2.5 0 0 1-2.5 2.5M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7"></path>
+                    </svg>
+                  </i>
+                  <span>Maanweg 174, The Hague, The Netherlands</span>
+                </a>
+                <a href="">
+                  <i style="display: block; width: 24px; height: 24px" tag="phone">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                      <path fill="currentColor" d="M19.95 21q-3.125 0-6.175-1.362t-5.55-3.863q-2.5-2.5-3.862-5.55T3 4.05q0-.45.3-.75t.75-.3H8.1q.35 0 .625.238t.325.562l.65 3.5q.05.4-.025.675T9.4 8.45L6.975 10.9q.5.925 1.187 1.787t1.513 1.663q.775.775 1.625 1.438T13.1 17l2.35-2.35q.225-.225.588-.337t.712-.063l3.45.7q.35.1.575.363T21 15.9v4.05q0 .45-.3.75t-.75.3"></path>
+                    </svg>
+                  </i>
+                  <span>Tel.: +31 704 190 309</span>
+                </a>
+                <a href="">
+                  <i style="display: block; width: 24px; height: 24px" tag="mail">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                      <path fill="currentColor" d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.587 1.413T20 20zm8-7l8-5V6l-8 5l-8-5v2z"></path>
+                    </svg>
+                  </i>
+                  <span>Send us message</span>
+                </a>
+              </div>
+              <div class="info_social">
+                <div>
+                  <a href="">
+                    <i style="display: block; width: 24px; height: 24px" tag="facebook">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95"></path>
+                      </svg>
+                    </i>
+                  </a>
+                </div>
+                <div>
+                  <a href="">
+                    <i style="display: block; width: 24px; height: 24px" tag="twitter">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23"></path>
+                      </svg>
+                    </i>
+                  </a>
+                </div>
+                <div>
+                  <a href="">
+                    <i style="display: block; width: 24px; height: 24px" tag="linkedin">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z"></path>
+                      </svg>
+                    </i>
+                  </a>
+                </div>
+                <div>
+                  <a href="">
+                    <i style="display: block; width: 24px; height: 24px" tag="instagram">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3"></path>
+                      </svg>
+                    </i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="container-fluid footer_section no-edit lock_edit">
+    </footer>
+
+    <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+
+    <script>
+      function openNav() {
+        document.getElementById("myNav").classList.toggle("menu_width");
+        document.querySelector(".custom_menu-btn").classList.toggle("menu_btn-style");
+      }
+    </script>
+  
+
+</body></html>

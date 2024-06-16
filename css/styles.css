@@ -1,0 +1,261 @@
+@import url("./section-templates.css");
+@import url("./animate.css");
+.shared_initial_loader_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: rgb(40, 50, 60);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+}
+
+.shared_initial_loader_div .shared_initial_loader_span {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #fff;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: shared_rotation 1s linear infinite;
+}
+
+@keyframes shared_rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.shared-flex-vertical-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.shared-flex-vertical-left .shared-image-ctn {
+  width: 100%;
+}
+
+.shared-aspect-ratio-1-1 {
+  width: 9rem;
+  height: 9rem;
+}
+
+.shared-aspect-ratio-4-3 {
+  padding-top: 75%;
+}
+
+.shared-aspect-ratio-16-9 {
+  padding-top: 56.25%;
+}
+
+.shared-image-ctn {
+  position: relative;
+}
+
+.shared-image-ctn.shared-circle > img {
+  border-radius: 50%;
+}
+
+.post-preview {
+  cursor: pointer;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.post-preview h2 {
+  font-size: 24px;
+  margin-top: 20px;
+  color: #007bff;
+}
+
+.post-title {
+  font-size: 30px;
+  color: #333;
+  padding: 20px 0 20px 0;
+  text-align: center;
+}
+
+.blog_title {
+  font-size: 30px;
+  color: #333;
+  padding: 20px 0 20px 0;
+  text-align: center;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.post-preview p {
+  font-size: 18px;
+  color: #666;
+}
+
+.post-section {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.post-section h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.post-section p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #666;
+}
+
+.shared-image-ctn img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.shared-image-ctn .shared-skeleton {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#editor_list .shared-image-ctn {
+  border-radius: 10px;
+}
+
+.shared-user-loader {
+  width: 100%;
+}
+
+.shared-user-loader .shared-skeleton {
+  width: 40%;
+  height: 20px;
+  border-radius: 6px;
+}
+
+.shared-skeleton {
+  background-color: #e2e5e7;
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+  background-size: 160px 100%;
+  background-repeat: no-repeat;
+  background-position: left -160px top 0;
+  animation: shine 1s ease infinite;
+}
+
+.shared-hidden {
+  display: none;
+}
+
+.shared-error-message {
+  color: #ff0000;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.IFRAME_CONTAINER {
+  height: 100%;
+}
+
+.shared-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.shared-overlay img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Dropdown */
+.shared-dropdown {
+  position: relative;
+  display: inline-block;
+  background-color: transparent;
+  z-index: 50;
+}
+
+.shared-dropdown-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.shared-dropdown-button:hover {
+  background-color: #f1f1f17a;
+}
+
+.shared-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: 100%;
+}
+.shared-dropdown-content a {
+  padding: 8px 12px !important;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
+}
+.shared-dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+.shared-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.shared-language-placeholder {
+  display: none;
+}
+
+.shared-widget {
+  position: fixed;
+
+  right: 0;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  z-index: 1000;
+
+  background-color: white;
+  padding: 8px;
+
+  border-radius: 8px 0 0 8px;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+
+  color: black;
+
+  border: 1px solid rgb(0, 0, 0, 10%);
+  border-right: 0;
+}
